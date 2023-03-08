@@ -1,0 +1,29 @@
+{
+  "name": "nex",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build:lib": "nx build @nex-fam/lib",
+    "build:site": "nx build site",
+    "build": "nx run-many --target=build",
+    "build:all": "nx run-many --target=build --skip-nx-cache",
+    "graph": "nx graph",
+    "start:lib": "nx start @nex-fam/lib",
+    "start:site": "nx start site",
+    "start": "yarn start:site",
+    "dev:lib": "yarn start:lib",
+    "dev:site": "nx dev site",
+    "dev": "yarn dev:site",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,scss,mjs}\""
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "nx": "15.7.2",
+    "prettier": "2.2.1"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

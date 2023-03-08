@@ -1,0 +1,24 @@
+{
+  "name": "site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prettier . --check && next build && next export",
+    "start": "next start",
+    "lint": "yarn format:check && next lint",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "dependencies": {
+    "next": "12.2.4",
+    "next-transpile-modules": "^9.0.0",
+    "prettier": "2.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@nex-fam/lib": "*"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
